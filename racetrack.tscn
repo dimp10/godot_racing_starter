@@ -59,6 +59,15 @@ stream = ExtResource( 6 )
 autoplay = true
 stream_paused = true
 
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2( 0, -2 )
+rotating = true
+current = true
+zoom = Vector2( 3, 3 )
+process_mode = 0
+smoothing_enabled = true
+smoothing_speed = 10.0
+
 [node name="objects" type="Node2D" parent="."]
 
 [node name="tribune_overhang_red" type="Sprite" parent="objects"]

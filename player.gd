@@ -26,7 +26,8 @@ func sound():
 	pass
 
 func camera():
-	pass
+	var scalefactor = 1.5 + linear_velocity.length()/1000
+	$Camera2D.zoom = lerp($Camera2D.zoom, Vector2(scalefactor,scalefactor), 0.01)
 
 const Skidmark = preload("res://skidmark.tscn")
 

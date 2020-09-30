@@ -23,7 +23,12 @@ func input():
 		apply_central_impulse(Vector2(0, ACCELERATION).rotated(rotation))
 
 func sound():
-	pass
+	if linear_velocity.length()<0.1:
+		print(linear_velocity.length())
+		$engine.stop()
+	else:
+		$engine.play()
+	$engine.pitch_scale = linear_velocity.length()/1000 + 0.1
 
 func camera():
 	var scalefactor = 1.5 + linear_velocity.length()/1000
@@ -33,3 +38,7 @@ const Skidmark = preload("res://skidmark.tscn")
 
 func doSkidmark():
 	pass
+
+
+func _on_player_body_entered(body):
+	$crash.play()

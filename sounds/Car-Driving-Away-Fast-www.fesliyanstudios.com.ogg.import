@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Car-Driving-Away-Fast-www.fesliyanstudios.com.ogg-ff2e7fed1f2165c7a03fe84822ff6137.oggstr"
+
+[deps]
+
+source_file="res://sounds/Car-Driving-Away-Fast-www.fesliyanstudios.com.ogg"
+dest_files=[ "res://.import/Car-Driving-Away-Fast-www.fesliyanstudios.com.ogg-ff2e7fed1f2165c7a03fe84822ff6137.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

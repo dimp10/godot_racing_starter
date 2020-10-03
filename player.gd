@@ -23,11 +23,11 @@ func input():
 		apply_central_impulse(Vector2(0, ACCELERATION).rotated(rotation))
 
 func sound():
-	if linear_velocity.length()<0.1:
-		print(linear_velocity.length())
-		$engine.stop()
-	else:
-		$engine.play()
+#	if linear_velocity.length()<0.1:
+#		print(linear_velocity.length())
+#		$engine.stop()
+#	else:
+#		$engine.play()
 	$engine.pitch_scale = linear_velocity.length()/1000 + 0.1
 
 func camera():

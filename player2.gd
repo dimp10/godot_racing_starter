@@ -12,14 +12,14 @@ func _physics_process(delta):
 	sound()
 	
 func input():
-	var steering = Input.get_action_strength("steer_right") - Input.get_action_strength("steer_left")
-	if Input.is_action_pressed("drift"):
+	var steering = Input.get_action_strength("steer_right2") - Input.get_action_strength("steer_left2")
+	if Input.is_action_pressed("drift2"):
 		apply_torque_impulse(DRIFT_STEERING * steering)
 		linear_damp = DRIFT_FRICTION
 		$skid.stream_paused = false
 		doSkidmark()
 	else:
-		var acceleration = (Input.get_action_strength("accelerate") - Input.get_action_strength("brake")) * Vector2.UP * ACCELERATION
+		var acceleration = (Input.get_action_strength("accelerate2") - Input.get_action_strength("brake2")) * Vector2.UP * ACCELERATION
 		apply_central_impulse(acceleration.rotated(rotation))
 		apply_torque_impulse(STEERING * steering )
 		linear_damp = FRICTION

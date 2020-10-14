@@ -14,3 +14,7 @@ func _on_checkpoint_body_entered(body):
 		$HUD/best.text = "BEST: " + str (best_time).pad_zeros(3).left(6)
 		
 		time = 0
+
+
+func _on_offroad_body_entered(body):
+	pass # Replace with function body.

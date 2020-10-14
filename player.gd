@@ -48,3 +48,17 @@ func doSkidmark():
 
 func _on_player_body_entered(body):
 	$crash.play()
+
+var old_friction = 0
+
+func _on_offroad_body_entered(body):
+	if body == self:
+		print("offroad")
+		old_friction = FRICTION
+		FRICTION=10
+
+
+
+func _on_offroad_body_exited(body):
+	if body == self:
+		FRICTION = old_friction

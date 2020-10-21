@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=113 format=2]
+[gd_resource type="TileSet" load_steps=124 format=2]
 
 [ext_resource path="res://spritesheet_tiles.png" type="Texture" id=1]
 
@@ -334,6 +334,39 @@ points = PoolVector2Array( 0, 112, 32, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=111]
 points = PoolVector2Array( 0, 0, 128, 64, 128, 80, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=112]
+points = PoolVector2Array( 0, 0, 64, 0, 128, 64, 128, 128, 96, 128, 96, 64, 64, 32, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=113]
+points = PoolVector2Array( 0, 0, 128, 0, 126.32, 18.3201, 0, 19.7603 )
+
+[sub_resource type="ConvexPolygonShape2D" id=114]
+points = PoolVector2Array( 1.04004, 107.6, 126.32, 107.6, 128, 128, 0, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=115]
+points = PoolVector2Array( 0, 0, 128, 0, 126.32, 18, 0, 19.4401 )
+
+[sub_resource type="ConvexPolygonShape2D" id=116]
+points = PoolVector2Array( 0, 105.84, 123.92, 105.84, 128, 128, 0, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=117]
+points = PoolVector2Array( 128, 0, 128, 128, 105.2, 125.84, 103.76, 3.44006 )
+
+[sub_resource type="ConvexPolygonShape2D" id=118]
+points = PoolVector2Array( 0, 128, 0, 64, 32, 32, 96, 0, 128, 0, 128, 32, 64, 32, 32, 96, 32, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=119]
+points = PoolVector2Array( 1.52014, 105.36, 27.4402, 103.92, 57.6802, 93.8401, 86.4801, 72.24, 106.64, 29.04, 106.64, 0.23999, 126.8, 3.12, 126.8, 37.6801, 113.84, 70.8, 93.6801, 96.72, 66.3202, 114, 31.7601, 125.52, 1.52014, 122.64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=120]
+points = PoolVector2Array( 20.2401, 1.84009, 27.4402, 47.92, 56.2401, 86.8, 102.32, 104.08, 125.36, 108.4, 126.8, 124.24, 76.4, 121.36, 30.3202, 95.4401, 1.52014, 43.6001, 0.0800781, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=121]
+points = PoolVector2Array( 21.2001, 0, 19.7601, 122.16, 0, 120.72, 2.4801, 1.2002 )
+
+[sub_resource type="ConvexPolygonShape2D" id=122]
+points = PoolVector2Array( 128, 0, 128, 128, 106.16, 128, 106.16, 0 )
 
 [resource]
 0/name = "spritesheet_tiles.png 0"
@@ -1041,9 +1074,76 @@ points = PoolVector2Array( 0, 0, 128, 64, 128, 80, 0, 16 )
 1/navigation_offset = Vector2( 0, 0 )
 1/shape_offset = Vector2( 0, 0 )
 1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 112 )
 1/shape_one_way = false
-1/shape_one_way_margin = 0.0
-1/shapes = [  ]
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 4, 11 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 112 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 16 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 113 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 16 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 114 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 14 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 115 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 3, 14 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 116 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 3, 13 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 117 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 4, 12 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 118 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 3, 11 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 119 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 3, 12 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 120 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 17 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 121 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 17 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 122 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 1/z_index = 0
 2/name = "spritesheet_tiles.png 2"
 2/texture = ExtResource( 1 )
